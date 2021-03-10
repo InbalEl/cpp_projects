@@ -1,4 +1,3 @@
-
 /**********************   PREPROCESSOR DIRECTIVES   **************************/
 #include <iostream>
 #include <vector>
@@ -19,7 +18,7 @@ public:
 	BtsQueue(const BtsQueue& other) = delete;
 	BtsQueue& operator=(const BtsQueue& other) = delete;
 
-	void Enqueue(const T& element); // const?
+	void Enqueue(const T& element);
 	void Dequeue(T& elem);
 
 private:
@@ -44,7 +43,7 @@ void BtsQueue<T, CMP>::Enqueue(const T& element)
 /*---------------------------------------------------------------------------*/
 
 template <typename T, typename CMP>
-void BtsQueue<T, CMP>::Dequeue(T& elem) //T BtsQueue<T>::Dequeue()
+void BtsQueue<T, CMP>::Dequeue(T& elem) 
 {
 	std::unique_lock<std::mutex> u_m_lock(m_mutex);
 
