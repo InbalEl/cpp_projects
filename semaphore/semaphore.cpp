@@ -1,7 +1,5 @@
 /**********************   PREPROCESSOR DIRECTIVES   **************************/
 #include "semaphore.hpp"
-/*******************************  inbalel  ***********************************/
-namespace inbalel {
 /**************************  Class  Functions  *******************************/
 
 Semaphore::Semaphore(size_t max_resources, size_t init_value)
@@ -12,7 +10,7 @@ Semaphore::Semaphore(size_t max_resources, size_t init_value)
 size_t Semaphore::GetValue()
 {
     m_mtx.lock();
-    size_t curr_val = m_curr_val; 
+    size_t curr_val = m_curr_val;
 	m_mtx.unlock();
     return (curr_val);
 }
@@ -44,6 +42,4 @@ void Semaphore::Post()
 	}
 }
 
-/*---------------------------------------------------------------------------*/
-} // namespace inbalel
 /*****************************************************************************/
