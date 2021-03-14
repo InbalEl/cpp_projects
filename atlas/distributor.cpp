@@ -1,10 +1,3 @@
-/******************************************************************************
-* Project name:					 	Distributor          ***     *******
-* Developer: 						Inbal Elmalech        *      *
-* Project Lauch: 					Dec 16, 2020          *      ****
-* Project completion				Dec ??, 2020          *      *
-*                                                        ***  *  *******
-******************************************************************************/
 /**********************   PREPROCESSOR DIRECTIVES   **************************/
 #include <memory>
 #include <vector>
@@ -40,7 +33,7 @@ void DistModulo::RemoveIotFd(int iot_fd)
     --m_nof_iots;
 }
 
-/*------------------------------------------------------------ in request---------------*/
+/*---------------------------------------------------------------------------*/
 
 void DistModulo::Distribute(std::shared_ptr<Slicer> slicer)
 {

@@ -1,10 +1,3 @@
-/******************************************************************************
-* Project name:					 	req_disp             ***     *******
-* Developer: 						Inbal Elmalech        *      *
-* Project Lauch: 					Dec 02, 2020          *      ****
-* Project completion				Dec 03, 2020          *      *
-*                                                        ***  *  *******
-******************************************************************************/
 /**********************   PREPROCESSOR DIRECTIVES   **************************/
 #include <stdio.h>
 #include <string.h>
@@ -15,27 +8,11 @@
 #include <sys/socket.h>
 
 #include "bio_access.h"
-#include "threadpool.hpp"
 #include "reactor.hpp"
 #include "dispatcher.hpp"
 #include "distributor.hpp"
 #include "monitors.hpp"
 
-/*****************************************************************************/
-/*
-Code review #2:
- - check DevOpen for return value
- - create a read all function
- - run the line Eli told us about (in matching hpp file)
- - Add the NBD ioctl that Eli mentioned in whatsapp (also in screenshot)
- - no point in reusing socket (setsockopt) if we don't bind - meaning,
-   if we're not the server (disp is the client in this context
- - Don't bother too much with cleanups at the moment, just throw
- - for hiding the pointer in the atlas header struct - *(biorequest **)&a_header->first_member = request;
- - create wrappers for those NBD macros
-*/
-
-/*****************************  ilrd::ol90  **********************************/
 namespace ilrd {
 namespace rd90 {
 

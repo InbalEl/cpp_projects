@@ -1,10 +1,3 @@
-/******************************************************************************
-* Project name:					 	req_disp             ***     *******
-* Developer: 						Inbal Elmalech        *      *
-* Project Lauch: 					Dec 02, 2020          *      ****
-* Project completion				Dec 03, 2020          *      *
-*                                                        ***  *  *******
-******************************************************************************/
 /**********************   PREPROCESSOR DIRECTIVES   **************************/
 #include <memory>
 #include <unistd.h>
